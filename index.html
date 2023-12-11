@@ -1,66 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+	<title>devaloop</title>
+	<meta charset="utf-8">
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+	<meta name="description" content="Simple & Reliable App Packages: #1 Login Page Using Flutter, Simple, Reliable, Easy & Elegant. #2. Main Page, Building Dynamic Main Page, Menus and Contens. #3 Data List View, Informative Data Presentation. #4 Form Builder. #5 Model Builder & Data Adaptor. #6 CRUD Builder.">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+	<!-- iOS meta tags & icons -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="devaloop">
+	<link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+	<meta property="og:site_name" content="https://devaloop.com/">
+	<meta property="og:title" content="devaloop.com" />
+	<meta property="og:description" content="Simple & Reliable App Packages: #1 Login Page Using Flutter, Simple, Reliable, Easy & Elegant. #2. Main Page, Building Dynamic Main Page, Menus and Contens. #3 Data List View, Informative Data Presentation. #4 Form Builder. #5 Model Builder & Data Adaptor. #6 CRUD Builder." />
+	<meta property="og:image" itemprop="image" content="https://src.devaloop.com/logo-devaloop-bg-white-512.png">
+	<meta property="og:type" content="website" />
+	<meta property="og:updated_time" content="2023-11-27T20:02:00+00:00" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon.png"/>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Simple & Reliable App Packages: #1 Login Page Using Flutter, Simple, Reliable, Easy & Elegant. #2. Main Page, Building Dynamic Main Page, Menus and Contens. #3 Data List View, Informative Data Presentation. #4 Form Builder. #5 Model Builder & Data Adaptor. #6 CRUD Builder.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="devaloop">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <meta property="og:site_name" content="https://devaloop.com/">
-  <meta property="og:title" content="devaloop.com" />
-  <meta property="og:description" content="Simple & Reliable App Packages: #1 Login Page Using Flutter, Simple, Reliable, Easy & Elegant. #2. Main Page, Building Dynamic Main Page, Menus and Contens. #3 Data List View, Informative Data Presentation. #4 Form Builder. #5 Model Builder & Data Adaptor. #6 CRUD Builder." />
-  <meta property="og:image" itemprop="image" content="https://src.devaloop.com/logo-devaloop-bg-white-512.png">
-  <meta property="og:type" content="website" />
-  <meta property="og:updated_time" content="2023-11-27T20:02:00+00:00" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>devaloop</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3906344884";
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="index.html"> <img src="favicon.png" alt=""> devaloop</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">				
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="services.html">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron text-center">
+		<h1>Welcome to devaloop</h1>
+		<p>We provide simple and reliable app packages.</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="login_page.png" alt="login_page" class="img-fluid rounded">
+				<h3>Login Page</h3>
+				<p>Flutter package for creating login page.</p>				
+				<a href="https://www.youtube.com/watch?v=pZrzwz5-A4w&list=PLdFYgQ8CVHi4CYfG1JTb3CAFgzsRoqKyE&index=1" target="_blank" class="btn btn-primary">Learn More</a>
+				<p></p>
+			</div>
+			<div class="col-sm-4">
+				<img src="main_page.png" alt="main_page" class="img-fluid rounded">
+				<h3>Main Page</h3>
+				<p>Flutter package for creating main page.</p>
+				<a href="https://www.youtube.com/watch?v=Bc-Z57_gZ6A&list=PLdFYgQ8CVHi4CYfG1JTb3CAFgzsRoqKyE&index=2" target="_blank" class="btn btn-primary">Learn More</a>
+				<p></p>
+			</div>
+			<div class="col-sm-4">
+				<img src="data_list_view.png" alt="data_list_view" class="img-fluid rounded">
+				<h3>Data List View</h3>
+				<p>Flutter package for creating data list view.</p>
+				<a href="https://www.youtube.com/watch?v=yrVs6r2514I&list=PLdFYgQ8CVHi4CYfG1JTb3CAFgzsRoqKyE&index=3" target="_blank" class="btn btn-primary">Learn More</a>
+				<p></p>
+			</div>
+			<div class="col-sm-4">
+				<img src="form_builder.png" alt="form_builder" class="img-fluid rounded">
+				<h3>Form Builder</h3>
+				<p>Flutter package for creating form.</p>
+				<a href="https://www.youtube.com/watch?v=fkvoEauPytE&list=PLdFYgQ8CVHi4CYfG1JTb3CAFgzsRoqKyE&index=4" target="_blank" class="btn btn-primary">Learn More</a>
+				<p></p>
+			</div>
+			<div class="col-sm-4">
+				<img src="coming_soon.png" alt="coming_soon" class="img-fluid rounded">
+				<h3>Data Model</h3>
+				<p>Flutter package for creating model and data adaptor.</p>
+				<a href="#" class="btn btn-secondary">Coming Soon</a>
+				<p></p>
+			</div>
+			<div class="col-sm-4">
+				<img src="coming_soon.png" alt="coming_soon" class="img-fluid rounded">
+				<h3>CRUD  Builder</h3>
+				<p>Flutter package for creating CRUD builder.</p>
+				<a href="#" class="btn btn-secondary">Coming Soon</a>
+				<p></p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
